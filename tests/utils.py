@@ -8,7 +8,7 @@ def parse_version(version: str):
     return tuple(int(x) for x in version.split("."))
 
 
-old_pygments = parse_version(pygments.__version__) < (2, 16, 1)
+old_pygments = parse_version(pygments.__version__) < (2, 19, 0)
 
 
 def compare_to_file(text, name):
